@@ -57,6 +57,19 @@ This repository serves as a collection of hands-on practice work completed while
 - System calls and kernel interfaces
 - Performance optimization techniques
 
+### 4. From 0 to 1: C Programming
+- **Platform**: Udemy
+- **Link**: https://www.udemy.com/course/from-0-to-1-c-programming/
+- **Skill Level**: Beginner
+- **Directory**: `From_0_to_1_Drill_Deep/`
+
+#### Key Topics Covered:
+- C fundamentals (types, operators, control flow)
+- Functions and modular programming
+- Pointers and memory basics
+- Arrays and strings
+- Bit manipulation exercises and drills
+
 ## 🛠️ Technologies & Tools
 
 - **Microcontrollers**: STM32 (ARM Cortex-M series)
