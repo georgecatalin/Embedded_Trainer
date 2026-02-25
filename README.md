@@ -74,7 +74,7 @@ This repository serves as a collection of hands-on practice work completed while
 - **Platform**: Udemy
 - **Link**: https://www.udemy.com/course/multithreading_parta/
 - **Skill Level**: Intermediate
-- **Status**: Planned
+- **Status**: In progress
 - **Directory**: `Multithreading_Thread_Synchronization_Pthreads/`
 
 #### Key Topics covered:
