@@ -70,12 +70,32 @@ This repository serves as a collection of hands-on practice work completed while
 - Arrays and strings
 - Bit manipulation exercises and drills
 
+### 5. Multithreading & Thread Synchronization - Pthreads
+- **Platform**: Udemy
+- **Link**: https://www.udemy.com/course/multithreading_parta/
+- **Skill Level**: Intermediate
+- **Status**: Planned
+- **Directory**: `Multithreading_Thread_Synchronization_Pthreads/`
+
+#### Key Topics covered:
+- Multithreading is beneficial vs. processes in Linux applications
+- Create and manage POSIX threads (`pthread_create`, `pthread_join`, `pthread_exit`, thread attributes)
+- Practice safe data sharing between threads and identify common concurrency hazards (race conditions, deadlocks)
+- Use synchronization primitives correctly:
+  - Mutexes (`pthread_mutex_*`) and mutex attributes
+  - Condition variables (`pthread_cond_*`) for signaling and coordination
+  - Read-write locks (`pthread_rwlock_*`) for read-heavy workloads
+  - Semaphores (`sem_*`) for counting/resource control
+- Implement classic concurrency patterns/exercises (producer–consumer, readers–writers, dining philosophers) and analyze correctness
+- Work with thread cancellation and cleanup handlers, and handle thread-safe resource management
+- Measure and reason about thread performance (contention, context switching) and validate behavior with debugging/diagnostic tools (e.g., `gdb`, `strace`, `helgrind`/`drd`)
+
 ## 🛠️ Technologies & Tools
 
 - **Microcontrollers**: STM32 (ARM Cortex-M series)
-- **IDE**: STM32CubeIDE, Eclipse CDT
+- **IDE**: STM32CubeIDE, Eclipse CDT, Visual Studio Code
 - **Compilers**: GCC, ARM GCC
-- **Languages**: C (embedded C)
+- **Languages**: C (+ embedded C)
 - **Debugging**: SWD/JTAG, ITM (Instrumentation Trace Macrocell)
 - **Hardware**: STM32 Nucleo-144 development boards, x86 or x86-64 PC
 - **Operating System**: Linux (for system programming topics)
