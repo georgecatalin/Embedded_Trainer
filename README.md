@@ -73,7 +73,7 @@ This repository serves as a collection of hands-on practice work completed while
 ### 5. Multithreading & Thread Synchronization - Pthreads
 - **Platform**: Udemy
 - **Link**: https://www.udemy.com/course/multithreading_parta/
-- **Skill Level**: Intermediate
+- **Skill Level**: Intermediate/Advanced
 - **Status**: In progress
 - **Directory**: `Multithreading_Thread_Synchronization_Pthreads/`
 
