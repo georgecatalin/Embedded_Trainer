@@ -22,9 +22,8 @@ A hands-on practice repository for mastering multithreading concepts using POSIX
 Embedded_Refresher/
 └── Multithreading_Thread_Synchronization_Pthreads/
     ├── readme.md
-    ├── examples/
-    ├── exercises/
-    └── solutions/
+    ├── examples by chapter/
+
 ```
 
 ## Prerequisites
@@ -42,5 +41,5 @@ gcc -pthread -o program program.c
 - [POSIX Threads Documentation](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/pthread.h.html)
 - Udemy Course Materials
 
-## Notes
-Add practice exercises and solutions as you progress through the course.
+
+
