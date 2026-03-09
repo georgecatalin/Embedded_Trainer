@@ -65,6 +65,11 @@ int publisher_subscribe(Publisher_t *publisher, SubscriberCallback cb, void *use
 /* Notify the subscribers */
 void publisher_notifies(Publisher_t *publisher, int value)
 {
+    if(!publisher)
+    {
+        return NULL;
+    }
+
     for(int i = 0; i<MAX_SUBSCRIBERS; i++)
     {
         if(publisher->slots[i].slot_in_use && publisher->slots[i].callback)
