@@ -30,9 +30,7 @@ void *write_into_file(void *arg)
 
     if (!ptr_file)
     {
-        fprintf(stderr, "Error [%s] on opening file %s.\n", strerror(errno), filename); 
-        // In older versions of C, if the compiler encounters a function it doesn't recognize, it simply 
-        // guesses that the function returns a standard integer (int).
+        fprintf(stderr, "Error [%s] on opening file %s.\n", strerror(errno), filename);
         return NULL;
     }
 
