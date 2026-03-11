@@ -9,21 +9,19 @@
 
 pthread_t slaves[NUMBER_OF_SLAVES];
 
-//write the functions used to gracefully thread cancel
-void memory_cleaning_before_thread_cancellation (void *arg)
+// write the functions used to gracefully thread cancel
+void memory_cleaning_before_thread_cancellation(void *arg)
 {
-    printf("%s was invoked in Line number: %d and File:%s\n", __func__,__LINE__,__FILE__);
+    printf("%s was invoked in Line number: %d and File:%s\n", __func__, __LINE__, __FILE__);
     free(arg);
 }
 
-void file_pointer_cleaning_before_cancellation (void * arg)
+void file_pointer_cleaning_before_cancellation(void *arg)
 {
-    printf("%s was invoked in line number:%d of file:%s\n",__func__,__LINE__,__FILE__);
-    FILE *ptr = (FILE *) arg;
+    printf("%s was invoked in line number:%d of file:%s\n", __func__, __LINE__, __FILE__);
+    FILE *ptr = (FILE *)arg;
     fclose(arg);
 }
-
-
 
 void *write_into_file(void *arg)
 {
@@ -33,29 +31,30 @@ void *write_into_file(void *arg)
     int count = 0;
 
     /* set the thread as cancellable */
-    pthread_setcancelstate(PTHREAD_CANCEL_ENABLE,0);
+    pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, 0);
 
     /* set the type of the thread cancellation to asynchronous */
-    pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS,0);
+    pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, 0);
 
     int *thread_id = (int *)arg;
 
     sprintf(filename, "thread_%d.txt", *thread_id);
 
-    //enter the POSIX function to gracefully allow the cancellation of the thread
+    // enter the POSIX function to gracefully allow the cancellation of the thread
     pthread_cleanup_push(memory_cleaning_before_thread_cancellation, arg);
 
     FILE *ptr_file = fopen(filename, "w");
 
     if (!ptr_file)
     {
-        fprintf(stderr, "Error [%s] on opening file %s.\n", strerror(errno), filename); 
-        // In older versions of C, if the compiler encounters a function it doesn't recognize, it simply 
+        fprintf(stderr, "Error [%s] on opening file %s.\n", strerror(errno), filename);
+        // In older versions of C, if the compiler encounters a function it doesn't recognize, it simply
         // guesses that the function returns a standard integer (int).
-        return NULL;
+        //return NULL; //avoid using return, cause it will not allow cleanup_pop execution
+        pthread_exit(0);
     }
 
-    //enter the POSIX function to gracefully allow the cancellation of the thread
+    // enter the POSIX function to gracefully allow the cancellation of the thread
     pthread_cleanup_push(file_pointer_cleaning_before_cancellation, ptr_file);
 
     while (1)
@@ -66,7 +65,7 @@ void *write_into_file(void *arg)
         sleep(1);
     }
 
-    //pop the POSIX clean-up functions out of the stack in case that threads were not cancelled
+    // pop the POSIX clean-up functions out of the stack in case that threads were not cancelled
     pthread_cleanup_pop(0);
     pthread_cleanup_pop(0);
 }
@@ -99,16 +98,16 @@ int main(void)
             printf("Invalid choice, pal!!!");
             return -1;
         }
-    }
 
-    switch (choice)
-    {
-    case 1:
-        pthread_cancel(slaves[thread_number]);
-        break;
+        switch (choice)
+        {
+        case 1:
+            pthread_cancel(slaves[thread_number]);
+            break;
 
-    default:
-        break;
+        default:
+            break;
+        }
     }
 
     return 0;
