@@ -1,0 +1,15 @@
+Core idea
+
+Spin locks are similar to mutexes in multithreading applications.
+
+Quick analogy
+Mutex -> like waiting in line and sleeping until it is your turn (OS places the thread to sleep)
+Spinlock -> like checking the door's handle in a tight loop (is it available now? but now? now?)
+
+Spinlocks waste CPU when waiting, but they avoid overhead when going to sleep and waking up.
+
+When to use each
+Lock held for a very short time -> use a Spinlock
+Lock held for a long time -> use a Mutex
+
+Tiny to small critical section -> use a Spinlock
