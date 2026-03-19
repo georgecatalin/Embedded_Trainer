@@ -5,6 +5,7 @@ A hands-on embedded-systems training repository focused on learning by building.
 ##  Purpose
 
 The goal is to provide a clear progression from fundamentals to more complete, hardware-oriented applications, with code organized for readability and reuse. Along the way, it highlights common embedded best practices.
+
 If you’re preparing for embedded interviews, refreshing firmware skills, or looking for structured practice that maps closely to real embedded development, this repo is intended to serve as a compact “trainer” you can clone, run, and extend.
 
 ##  Courses Covered
