@@ -1,6 +1,10 @@
-# Embedded Refresher
+# Embedded Trainer
 
-A personal learning repository hosting practice projects and code examples from various Udemy courses focused on embedded systems, systems and microcontroller programming.
+A hands-on embedded-systems training repository focused on learning by building. It collects practical exercises and small projects that guide you through core microcontroller and embedded Linux development concepts.
+
+The goal is to provide a clear progression from fundamentals to more complete, hardware-oriented applications, with code organized for readability and reuse. Along the way, it highlights common embedded best practices.
+
+If you’re preparing for embedded interviews, refreshing firmware skills, or looking for structured practice that maps closely to real embedded development, this repo is intended to serve as a compact “trainer” you can clone, run, and extend.
 
 ##  Purpose
 
