@@ -76,7 +76,6 @@ If you’re preparing for embedded interviews, refreshing firmware skills, or lo
 - **Platform**: Udemy
 - **Link**: https://www.udemy.com/course/multithreading_parta/
 - **Skill Level**: Intermediate/Advanced
-- **Status**: In progress
 - **Directory**: `Multithreading_Thread_Synchronization_Pthreads/`
 
 #### Key Topics covered:
@@ -97,7 +96,6 @@ If you’re preparing for embedded interviews, refreshing firmware skills, or lo
 - **Instructors**: Loony Corn (Janani Ravi & Vitthal Srinivasan)
 - **Link**: https://www.udemy.com/course/cplusplus-75-solved-problems/
 - **Skill Level**: Intermediate
-- **Status**: In progress
 - **Directory**: `Learn_CPP_by_example/`
 
 #### Key Topics Covered:
