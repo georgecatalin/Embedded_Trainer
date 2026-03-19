@@ -92,6 +92,33 @@ If you’re preparing for embedded interviews, refreshing firmware skills, or lo
 - Work with thread cancellation and cleanup handlers, and handle thread-safe resource management
 - Measure and reason about thread performance (contention, context switching) and validate behavior with debugging/diagnostic tools (e.g., `gdb`, `strace`, `helgrind`/`drd`)
 
+### 6. Learn By Example: C++ Programming - 75 Solved Problems
+- **Platform**: Udemy
+- **Instructors**: Loony Corn (Janani Ravi & Vitthal Srinivasan)
+- **Link**: https://www.udemy.com/course/cplusplus-75-solved-problems/
+- **Skill Level**: Intermediate
+- **Status**: In progress
+- **Directory**: `Learn_CPP_by_example/`
+
+#### Key Topics Covered:
+- Introduction to C++ and transitioning from C
+- Objects, Classes, and Object-Oriented Programming
+- Access modifiers and encapsulation
+- The 'this' pointer
+- Dynamic memory allocation with new/delete
+- The C++ string class
+- References and pointers
+- const and static keywords
+- Friend functions and classes
+- Operator overloading
+- Inheritance and multiple inheritance
+- Virtual methods and polymorphism
+- Templates and template specialization
+- Standard Template Library (STL): collections, iterators, and algorithms
+- C++ cast operators (const_cast, static_cast, dynamic_cast)
+- Real-Time Type Identification (RTTI)
+- Exception handling
+
 ## 🛠️ Technologies & Tools
 
 - **Microcontrollers**: STM32 (ARM Cortex-M series)
