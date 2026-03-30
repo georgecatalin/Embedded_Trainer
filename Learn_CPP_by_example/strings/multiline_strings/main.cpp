@@ -60,6 +60,16 @@ int main(void)
 
    cout<<"the address you entered is : "<<address<<endl;
 
+   string substring;
+   cout<<"The number of characters in the string is "<<complete_name.size()<<" or"<<complete_name.length()<<endl;
+
+   substring = first_name.substr(0,3);
+   cout<<" first three letters "<<substring<<endl;
+
+   cout<<complete_name.erase(0,3)<<endl;
+
+   cout<<complete_name.insert(0,substring)<<" back"<<endl;
+   cout<<complete_name.replace(0,3,"coc");
 
 
     return 0;
