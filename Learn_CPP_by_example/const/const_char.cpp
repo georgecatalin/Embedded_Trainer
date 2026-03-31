@@ -52,7 +52,7 @@ int main(void)
     char *const p3
     */
     cout<<"The value of p1 after the 2nd modification is ->"<<p3<<endl;
-    cout<<"The memory address where p1 is stored is "<<(void *)p3<<endl;
+    cout<<"The memory address where p1 is stored is "<<(void *)p3<<endl; 
 
     return 0;
 }
