@@ -29,5 +29,5 @@ public:
   float getComplexPart() const;
   void  setComplexPart(float c);
 
-  friend ComplexNumber addTwoComplexNumbers(const ComplexNumber &cart, const ComplexNumber_Polar &polar);
+  friend ComplexNumber addTwoComplexNumbers(const ComplexNumber &cart, const ComplexNumber_Polar &polar); //by marking this as friend, i am allowing it to access my private member variables inside this class
 };
