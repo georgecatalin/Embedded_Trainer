@@ -1,0 +1,28 @@
+// this is also called template specialization for a class
+
+#include <iostream>
+using namespace std;
+
+template <class KeyType, class ValueType>
+class KeyValuePair
+{
+private:
+    KeyType key;
+    ValueType value;
+
+public:
+    KeyValuePair(KeyType k, ValueType v) : key(k), value(v)
+    {
+        cout << "I am inside the class template (no specialization) for a given class " << endl;
+    }
+
+    KeyType getType() const
+    {
+        return key;
+    }
+
+    ValueType getValue const
+    {
+        return value;
+    }
+};
