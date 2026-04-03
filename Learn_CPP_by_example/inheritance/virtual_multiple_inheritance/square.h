@@ -12,6 +12,7 @@ class Square:public Rectangle, public Rhombus
     public:
         Square();
         ~Square();
+        void print();
 };
 
 
