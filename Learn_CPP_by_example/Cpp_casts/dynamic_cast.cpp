@@ -78,7 +78,9 @@ int main(void)
 
      //Shape& s2 = dynamic_cast<Rectangle&>(s1);
 
-
+    cout<<"The type of s1 object -->"<<typeid(s1).name()<<endl;
+    cout<<"The type of the shape object -->"<<typeid(shape).name()<<endl; //The type of the shape object -->P5Shape
+    cout<<"The type of the shape object it points to -->"<<typeid(*shape).name()<<endl; //The type of the shape object it points to -->5Shape
 
     return 0;
 }
