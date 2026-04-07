@@ -117,6 +117,10 @@ If you’re preparing for embedded interviews, refreshing firmware skills, or lo
 - Real-Time Type Identification (RTTI)
 - Exception handling
 
+### 7. Qt 6 Core Beginners with C++
+- **Platform**: Udemy
+- **Link**: https://www.udemy.com/course/qt-6-core-beginners-with-cpp/
+
 ## 🛠️ Technologies & Tools
 
 - **Microcontrollers**: STM32 (ARM Cortex-M series)
