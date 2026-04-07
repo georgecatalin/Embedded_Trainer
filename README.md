@@ -117,12 +117,27 @@ If you’re preparing for embedded interviews, refreshing firmware skills, or lo
 - Real-Time Type Identification (RTTI)
 - Exception handling
 
+### 7. Qt 6 Core Beginners with C++
+- **Platform**: Udemy
+- **Link**: https://www.udemy.com/course/qt-6-core-beginners-with-cpp/
+- **Skill Level**: Beginner
+- **Directory**: `Qt_6_Core_Beginners_with_CPP/`
+
+#### Key Topics Covered:
+- Qt fundamentals: project structure, build system basics, and Qt Creator workflow
+- Core C++ + Qt types: `QString`, `QByteArray`, `QList` / `QVector`, `QMap`, `QVariant`
+- Qt object model: `QObject`, properties, parent/child ownership, and object lifetime
+- Signals & slots (including common patterns and best practices)
+- Event loop concepts: timers, events, and basic asynchronous thinking in Qt
+- File and directory I/O with Qt (`QFile`, `QTextStream`, `QDir`)
+- Basic debugging and common pitfalls when mixing C++ and Qt (copy vs. move, implicit sharing)
+
 ## 🛠️ Technologies & Tools
 
 - **Microcontrollers**: STM32 (ARM Cortex-M series)
-- **IDE**: STM32CubeIDE, Eclipse CDT, Visual Studio Code
+- **IDE**: STM32CubeIDE, Eclipse CDT, Visual Studio Code, Qt Creator
 - **Compilers**: GCC, ARM GCC
-- **Languages**: C (+ embedded C)
+- **Languages**: C (+ embedded C), C++, Qt (C++ with Qt framework)
 - **Debugging**: SWD/JTAG, ITM (Instrumentation Trace Macrocell)
 - **Hardware**: STM32 Nucleo-144 development boards, x86 or x86-64 PC
 - **Operating System**: Linux (for system programming topics)
