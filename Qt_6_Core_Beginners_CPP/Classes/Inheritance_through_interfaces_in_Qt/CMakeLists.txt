@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(Inheritance_through_interfaces_in_Qt LANGUAGES CXX)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+
+add_executable(Inheritance_through_interfaces_in_Qt
+  main.cpp
+  Toaster.h
+  Freezer.h
+  Microwave.h
+  supercooker.h supercooker.cpp
+)
+target_link_libraries(Inheritance_through_interfaces_in_Qt PRIVATE Qt${QT_VERSION_MAJOR}::Core)
+
+include(GNUInstallDirs)
+install(TARGETS Inheritance_through_interfaces_in_Qt
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
