@@ -1,12 +1,12 @@
 # Embedded Trainer
 
-A hands-on embedded-systems training repository focused on learning by building. It collects practical exercises and small projects that guide you through core microcontroller and embedded Linux development concepts.
+A hands-on embedded-systems training repository focused on learning by building. It collects practical exercises and small projects that guide you through core microcontroller and embedded Linux development.
 
 ##  Purpose
 
-The goal is to provide a clear progression from fundamentals to more complete, hardware-oriented applications, with code organized for readability and reuse. Along the way, it highlights common embedded best practices.
+The goal is to provide a clear progression from fundamentals to more complete, hardware-oriented applications, with code organized for readability and reuse. Along the way, it highlights common embedded patterns (peripheral drivers, timing, interfaces, concurrency) and the tradeoffs that come with resource-constrained environments.
 
-If you’re preparing for embedded interviews, refreshing firmware skills, or looking for structured practice that maps closely to real embedded development, this repo is intended to serve as a compact “trainer” you can clone, run, and extend.
+If you’re preparing for embedded interviews, refreshing firmware skills, or looking for structured practice that maps closely to real embedded development, this repo is intended to serve as a companion learning hub.
 
 ##  Courses Covered
 
@@ -131,6 +131,21 @@ If you’re preparing for embedded interviews, refreshing firmware skills, or lo
 - Event loop concepts: timers, events, and basic asynchronous thinking in Qt
 - File and directory I/O with Qt (`QFile`, `QTextStream`, `QDir`)
 - Basic debugging and common pitfalls when mixing C++ and Qt (copy vs. move, implicit sharing)
+
+### 8. Qt 6 Core Intermediate with C++
+- **Platform**: Udemy
+- **Link**: https://www.udemy.com/course/qt-6-core-intermediate/
+- **Skill Level**: Intermediate
+- **Directory**: `Qt_6_Core_Intermediate_with_CPP/`
+
+#### Key Topics Covered:
+- Object ownership and lifetime beyond basics (parent/child patterns, RAII with Qt types)
+- Advanced signals & slots usage (lambdas, connection types, sender/receiver patterns)
+- Meta-object system deeper dive (`Q_OBJECT`, `moc`, properties, `QMetaObject` introspection)
+- Qt containers and implicit sharing in practice (performance considerations)
+- Smart pointers and memory management patterns alongside Qt
+- More file, text, and binary I/O patterns with Qt (`QFile`, `QDataStream`, `QTextStream`)
+- Error handling, debugging, and common intermediate pitfalls in Qt/C++ projects
 
 ## 🛠️ Technologies & Tools
 
