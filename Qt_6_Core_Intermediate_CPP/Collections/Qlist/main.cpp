@@ -39,7 +39,11 @@ int main(int argc, char *argv[])
     QList<int> newList = myList.sliced(2,5);
     qInfo()<<newList; //QList(0, 2, 6, 7, 8, 9, 1978, 1977, 2011)
 
+    int indexOf = myList.indexOf(2011);
+    qInfo()<<indexOf;
 
+    bool is2011in = myList.contains(2011);
+    qInfo()<<is2011in;
 
     return QCoreApplication::exec();
 }
